@@ -1,0 +1,17 @@
+dist: trusty
+sudo: required
+language: c
+compiler:
+  - gcc
+addons:
+  sonarcloud:
+    organization: "giantpanda0090-github"
+    token: $SONAR_TOKEN
+    github_token: $GITHUB_TOKEN
+script:
+  - ./indentation.sh 
+  - build-wrapper-linux-x86-64 --out-dir bw-output make
+  - sonar-scanner
+cache:
+  directories:
+    - '$HOME/.sonar/cache'

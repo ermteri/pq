@@ -1,0 +1,126 @@
+iter      chisq       delta/lim  lambda   a1            b1           
+   0 3.8672803678e+06   0.00e+00  4.19e+02    1.000000e+00   1.000000e+00
+   1 7.3133285317e+03  -5.28e+07  4.19e+01    4.270434e-02   9.986168e-01
+   2 2.7651585647e+00  -2.64e+08  4.19e+00   -7.869677e-04   9.968782e-01
+   3 1.9899851206e+00  -3.90e+04  4.19e-01   -6.036981e-04   8.546288e-01
+   4 6.8399163053e-03  -2.90e+07  4.19e-02    4.730447e-04   1.002625e-01
+   5 1.2469645857e-03  -4.49e+05  4.19e-03    5.333097e-04   5.804081e-02
+   6 1.2469628336e-03  -1.41e-01  4.19e-04    5.333434e-04   5.801716e-02
+iter      chisq       delta/lim  lambda   a1            b1           
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00124696
+rel. change during last iteration : -1.40506e-06
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0117708
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000138551
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a1              = 0.000533343      +/- 1.122e-05    (2.104%)
+b1              = 0.0580172        +/- 0.006649     (11.46%)
+
+correlation matrix of the fit parameters:
+                a1     b1     
+a1              1.000 
+b1             -0.846  1.000 
+iter      chisq       delta/lim  lambda   a2            b2           
+   0 3.7909667965e+06   0.00e+00  4.19e+02    1.000000e+00   1.000000e+00
+   1 7.2101208892e+03  -5.25e+07  4.19e+01    5.220183e-02   9.985937e-01
+   2 4.3805399423e+01  -1.64e+07  4.19e+00    9.147246e-03   9.931971e-01
+   3 3.5969030807e+01  -2.18e+04  4.19e-01    9.773803e-03   5.405178e-01
+   4 1.5885744251e+01  -1.26e+05  4.19e-02    1.320031e-02  -1.860097e+00
+   5 1.5829104499e+01  -3.58e+02  4.19e-03    1.339209e-02  -1.994458e+00
+   6 1.5829104482e+01  -1.12e-04  4.19e-04    1.339220e-02  -1.994534e+00
+iter      chisq       delta/lim  lambda   a2            b2           
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 15.8291
+rel. change during last iteration : -1.12091e-09
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.32619
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.75879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a2              = 0.0133922        +/- 0.001264     (9.442%)
+b2              = -1.99453         +/- 0.7491       (37.56%)
+
+correlation matrix of the fit parameters:
+                a2     b2     
+a2              1.000 
+b2             -0.846  1.000 
+
+* FILE: 
+  Records:           11
+  Out of range:       0
+  Invalid:            0
+  Blank:              0
+  Data Blocks:        1
+
+* COLUMNS:
+  Mean:             501.0000             0.3252
+  Std Dev:          316.2278             0.1690
+  Sample StdDev:    331.6625             0.1772
+  Skewness:           0.0000            -0.0944
+  Kurtosis:           1.7800             1.8433
+  Avg Dev:          272.7273             0.1448
+  Sum:             5511.0000             3.5774
+  Sum Sq.:       3.86101e+06             1.4776
+
+  Mean Err.:         95.3463             0.0510
+  Std Dev Err.:      67.4200             0.0360
+  Skewness Err.:      0.7385             0.7385
+  Kurtosis Err.:      1.4771             1.4771
+
+  Minimum:            1.0000 [ 0]        0.0468 [ 0]
+  Maximum:         1001.0000 [10]        0.5919 [10]
+  Quartile:         201.0000             0.1598
+  Median:           501.0000             0.3287
+  Quartile:         801.0000             0.4731
+
+  Linear Model:       y = 0.0005333 x + 0.05802
+  Slope:              0.0005333 +- 1.122e-05
+  Intercept:          0.05802 +- 0.006649
+  Correlation:        r = 0.998
+  Sum xy:             2379
+
+
+* FILE: 
+  Records:           11
+  Out of range:       0
+  Invalid:            0
+  Blank:              0
+  Data Blocks:        1
+
+* COLUMNS:
+  Mean:             501.0000             4.7150
+  Std Dev:          316.2278             4.4016
+  Sample StdDev:    331.6625             4.6164
+  Skewness:           0.0000             0.6669
+  Kurtosis:           1.7800             2.1136
+  Avg Dev:          272.7273             3.8063
+  Sum:             5511.0000            51.8646
+  Sum Sq.:       3.86101e+06           457.6546
+
+  Mean Err.:         95.3463             1.3271
+  Std Dev Err.:      67.4200             0.9384
+  Skewness Err.:      0.7385             0.7385
+  Kurtosis Err.:      1.4771             1.4771
+
+  Minimum:            1.0000 [ 0]        0.0393 [ 0]
+  Maximum:         1001.0000 [10]       13.2594 [10]
+  Quartile:         201.0000             0.5543
+  Median:           501.0000             3.2222
+  Quartile:         801.0000             8.3707
+
+  Linear Model:       y = 0.01339 x - 1.995
+  Slope:              0.01339 +- 0.001264
+  Intercept:          -1.995 +- 0.7491
+  Correlation:        r = 0.9621
+  Sum xy:             4.072e+04
+
+
+
