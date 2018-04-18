@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
 	pCount = 0;
 	clock_t rand_t;
 	srand((unsigned) time(&rand_t));
-	int current = size + (rand() % interval)
+	int current = size + (rand() % interval);
 
 //DEBUG
 
