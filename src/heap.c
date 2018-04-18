@@ -9,7 +9,7 @@
 struct Trees *empty = NULL;
 struct Trees *head;
 
-int nrEvent;
+int interval;
 int dynAvg;
 int chance;
 int pCount;
@@ -37,29 +37,26 @@ unsigned int absu(int value) {
 
 //method
 int main(int argc, char *argv[]) {
-	if (argc != 3) {
-		printf("usage: list  <nrEvent> <debug switch>\n");
+	if (argc != 4) {
+		printf("usage: list <size> <interval> <debug switch>\n");
 		exit(0);
 	}
 
-	nrEvent = atoi(argv[1]);
-	debug = atoi(argv[2]);
+	interval = atoi(argv[1]);
+	int size = atoi(argv[2]);
+	debug = atoi(argv[3]);
 	int counter = 0;
 	dynAvg = 0;
 	chance = 0;
 	pCount = 0;
 	clock_t rand_t;
 	srand((unsigned) time(&rand_t));
-	int current = absu(rand() + rand() - rand()) % (nrEvent - add_counter); //random N
-	current = absu(current);
-	while (current == 0) {
-		current = (rand() + rand() - rand()) % (nrEvent - add_counter);
-	}
+	int current = size + (rand() % interval)
 
 //DEBUG
 
 	printf("current generate as %d \n",current);
-
+    exit(0);
 	float dataList[3];
 	clock_t t, timestemp;
 
@@ -95,7 +92,7 @@ int main(int argc, char *argv[]) {
 		}
 
 		//decompose
-		if (add_counter < nrEvent) {
+		if (add_counter < interval) {
 			decompose(element, timestemp);
 
 			if (debug == 1) {
@@ -121,7 +118,7 @@ int main(int argc, char *argv[]) {
 	 */
 
 	double effeciency = (save) / (double) CLOCKS_PER_SEC * 1000;
-	printf("%d\t%.8lf\n", nrEvent, effeciency);
+	printf("%d\t%.8lf\n", interval, effeciency);
 
 //printf("# not crashed");
 
@@ -129,7 +126,7 @@ int main(int argc, char *argv[]) {
 }
 
 int decompose(Tree element, clock_t timestemp) {
-	int n = absu(rand() + rand() - rand()) % (nrEvent - add_counter); //random N
+	int n = absu(rand() + rand() - rand()) % (interval - add_counter); //random N
 	n = absu(n);
 	int t = element.value; //random N
 	float variable = 0;
